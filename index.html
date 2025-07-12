@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Calderón | Desarrollador de Software</title>
+    <title>Gabriel Calderón | Software Developer</title>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -14,27 +14,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
-    <!-- Chart.js para gráficos -->
+    <!-- Chart.js for graphs -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <!-- ScrollReveal para animaciones de scroll -->
+    <!-- ScrollReveal for scroll animations -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <style>
         body {
             font-family: 'Inter', sans-serif;
             background-color: #0a192f;
-            /* Azul marino muy oscuro */
+            /* Dark navy blue */
             color: #ccd6f6;
-            /* Color de texto principal (casi blanco) */
+            /* Main text color (off-white) */
         }
 
         .text-accent {
             color: #64ffda;
-            /* Verde-cian brillante */
+            /* Bright cyan-green */
         }
 
         .bg-accent {
@@ -77,7 +77,7 @@
 
         .card {
             background-color: #112240;
-            /* Azul un poco más claro */
+            /* Slightly lighter blue */
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -86,7 +86,7 @@
             box-shadow: 0 20px 30px -15px rgba(2, 12, 27, 0.7);
         }
 
-        /* Estilos para la línea de tiempo */
+        /* Timeline styles */
         .timeline-item {
             position: relative;
             padding-bottom: 2rem;
@@ -105,7 +105,7 @@
             width: 2px;
             height: 100%;
             background-color: #233554;
-            /* Color de la línea */
+            /* Line color */
         }
 
         .timeline-dot {
@@ -120,7 +120,7 @@
             z-index: 1;
         }
 
-        /* --- ESTILOS PARA IMAGEN DE FONDO --- */
+        /* --- BACKGROUND IMAGE STYLES --- */
         #hero {
             position: relative;
             background-size: cover;
@@ -155,12 +155,12 @@
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-accent">G4B0CM</a>
             <div class="hidden md:flex items-center space-x-8">
-                <a href="#about" class="highlight-link">Sobre Mí</a>
-                <a href="#experience" class="highlight-link">Experiencia</a>
-                <a href="#projects" class="highlight-link">Proyectos</a>
-                <a href="#skills" class="highlight-link">Habilidades</a>
+                <a href="#about" class="highlight-link">About Me</a>
+                <a href="#experience" class="highlight-link">Experience</a>
+                <a href="#projects" class="highlight-link">Projects</a>
+                <a href="#skills" class="highlight-link">Skills</a>
                 <a href="#contact"
-                    class="px-4 py-2 border-2 border-accent text-accent rounded-md hover:bg-accent hover:text-[#0a192f] transition-colors">Contacto</a>
+                    class="px-4 py-2 border-2 border-accent text-accent rounded-md hover:bg-accent hover:text-[#0a192f] transition-colors">Contact</a>
             </div>
             <div class="md:hidden">
                 <button id="mobile-menu-button" class="text-accent">
@@ -170,75 +170,69 @@
         </nav>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-[#112240] p-4">
-            <a href="#about" class="block py-2 text-center highlight-link">Sobre Mí</a>
-            <a href="#experience" class="block py-2 text-center highlight-link">Experiencia</a>
-            <a href="#projects" class="block py-2 text-center highlight-link">Proyectos</a>
-            <a href="#skills" class="block py-2 text-center highlight-link">Habilidades</a>
+            <a href="#about" class="block py-2 text-center highlight-link">About Me</a>
+            <a href="#experience" class="block py-2 text-center highlight-link">Experience</a>
+            <a href="#projects" class="block py-2 text-center highlight-link">Projects</a>
+            <a href="#skills" class="block py-2 text-center highlight-link">Skills</a>
             <a href="#contact"
-                class="block mt-2 text-center px-4 py-2 border-2 border-accent text-accent rounded-md hover:bg-accent hover:text-[#0a192f] transition-colors">Contacto</a>
+                class="block mt-2 text-center px-4 py-2 border-2 border-accent text-accent rounded-md hover:bg-accent hover:text-[#0a192f] transition-colors">Contact</a>
         </div>
     </header>
 
-    <!-- ============================================= -->
-    <!-- ==== CAMBIO AQUÍ: La sección Hero ahora está fuera de <main> ==== -->
-    <!-- ============================================= -->
-
-    <!-- Hero Section (ahora de ancho completo) -->
+    <!-- Hero Section (full-width) -->
     <section id="hero" class="min-h-screen flex items-center justify-start pt-24">
-        <!-- ==== CAMBIO AQUÍ: El div interior ahora tiene el contenedor para alinear el texto ==== -->
         <div class="reveal container mx-auto px-6 md:px-12 lg:px-24">
-            <p class="text-accent text-lg mb-4">Hola, mi nombre es</p>
+            <p class="text-accent text-lg mb-4">Hi, my name is</p>
             <h1 class="text-4xl md:text-7xl font-black text-[#ccd6f6]">Gabriel Calderón.</h1>
-            <h2 class="text-4xl md:text-6xl font-black text-[#8892b0] mt-2">Construyo soluciones de software
-                innovadoras.</h2>
+            <h2 class="text-4xl md:text-6xl font-black text-[#8892b0] mt-2">I build the software of the future.</h2>
             <p class="mt-6 max-w-xl text-lg text-[#8892b0]">
-                Soy un estudiante de Ingeniería de Software apasionado por el desarrollo, el liderazgo y el análisis
-                de datos. Actualmente, exploro el mundo del Machine Learning y la ciberseguridad en <span
-                    class="text-accent">Diners Club</span>, mientras lidero iniciativas como Presidente de la
-                Facultad de Ingeniería.
+                I am a Software Engineering student passionate about development, leadership, and data analysis.
+                Currently, I'm exploring the world of Machine Learning and cybersecurity at <span
+                    class="text-accent">Diners Club</span>, while leading initiatives as the President of the Faculty of
+                Engineering.
             </p>
             <div class="mt-8 flex space-x-4">
                 <a href="https://github.com/G4B0CM" target="_blank"
                     class="px-6 py-3 border-2 border-accent text-accent rounded-md hover:bg-accent hover:text-[#0a192f] transition-colors flex items-center space-x-2">
                     <i data-lucide="github"></i>
-                    <span>Mi GitHub</span>
+                    <span>My GitHub</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- El resto del contenido permanece dentro de <main> para mantener el contenedor -->
+    <!-- The rest of the content remains inside <main> to maintain the container -->
     <main class="container mx-auto px-6 md:px-12 lg:px-24">
 
         <!-- About Me Section -->
         <section id="about" class="py-24">
             <div class="reveal">
                 <h2 class="text-3xl font-bold flex items-center mb-12"><span
-                        class="text-accent mr-3 text-2xl">01.</span>Sobre Mí</h2>
+                        class="text-accent mr-3 text-2xl">01.</span>About Me</h2>
                 <div class="grid grid-cols-1 md:grid-cols-5 gap-10">
                     <div class="md:col-span-3 text-lg text-[#8892b0]">
                         <p class="mb-4">
-                            Desde que inicié mi carrera en Ingeniería de Software, me he enfocado en aplicar la
-                            tecnología para resolver problemas complejos. Mi experiencia abarca desde el desarrollo
-                            <span class="text-accent">full-stack</span> hasta la <span
-                                class="text-accent">gamificación</span> de plataformas educativas.
+                            Since beginning my journey in Software Engineering, I have focused on applying technology to
+                            solve complex problems. My experience ranges from <span
+                                class="text-accent">full-stack</span> development to the <span
+                                class="text-accent">gamification</span> of educational platforms.
                         </p>
                         <p class="mb-4">
-                            Mi rol como <span class="text-accent">Presidente de la Facultad de Ingeniería (FICA)</span>
-                            me ha permitido desarrollar habilidades de liderazgo excepcionales, culminando en la
-                            organización de un Hackathon para más de 100 estudiantes enfocado en los Objetivos de
-                            Desarrollo Sostenible de la ONU.
+                            My role as <span class="text-accent">President of the Faculty of Engineering (FICA)</span>
+                            has allowed me to develop exceptional leadership skills, culminating in the organization of
+                            a Hackathon for over 100 students focused on the UN's Sustainable Development Goals.
                         </p>
                         <p>
-                            Además, mi compromiso con la equidad de género en STEM se refleja en mi participación como
-                            <span class="text-accent">mentor en el Educatón STEMHer</span>, una experiencia que me llenó
-                            de orgullo y reafirmó mi propósito de construir un futuro tecnológico más inclusivo.
+                            Furthermore, my commitment to gender equity in STEM is reflected in my participation as a
+                            <span class="text-accent">mentor at the STEMHer Educathon</span>, an experience that filled
+                            me with pride and reaffirmed my purpose of building a more inclusive technological future.
                         </p>
                     </div>
                     <div class="md:col-span-2 flex items-center justify-center">
                         <div
                             class="w-64 h-64 md:w-72 md:h-72 rounded-lg bg-[#112240] border-2 border-accent flex items-center justify-center">
-                            <p class="text-center text-[#8892b0]"><img src="static/img/FotoCV.png"></p>
+                            <p class="text-center text-[#8892b0]"><img src="static/img/FotoCV.png"
+                                    alt="Profile Picture"></p>
                         </div>
                     </div>
                 </div>
@@ -249,57 +243,56 @@
         <section id="experience" class="py-24">
             <div class="reveal">
                 <h2 class="text-3xl font-bold flex items-center mb-12"><span
-                        class="text-accent mr-3 text-2xl">02.</span>Experiencia y Educación</h2>
+                        class="text-accent mr-3 text-2xl">02.</span>Experience & Education</h2>
                 <div class="max-w-3xl mx-auto">
                     <!-- Timeline Start -->
                     <div class="relative">
                         <!-- Item 1: Diners Club -->
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
-                            <h3 class="text-xl font-bold text-accent">Pasantía en Análisis de Fraudes</h3>
+                            <h3 class="text-xl font-bold text-accent">Fraud Analysis Internship</h3>
                             <p class="font-semibold text-[#ccd6f6]">Diners Club del Ecuador <span
-                                    class="text-sm text-[#8892b0] ml-2">2025 - Presente</span></p>
-                            <p class="mt-2 text-[#8892b0]">Aprendizaje y aplicación de técnicas de análisis de datos,
-                                estadística y Machine Learning para la identificación y prevención de fraudes.
-                                Desarrollo de dashboards para visualización de datos.</p>
+                                    class="text-sm text-[#8892b0] ml-2">2025 - Present</span></p>
+                            <p class="mt-2 text-[#8892b0]">Learning and applying data analysis, statistics, and Machine
+                                Learning techniques for fraud identification and prevention. Developed data
+                                visualization dashboards.</p>
                         </div>
-                        <!-- Item 2: Presidente FICA -->
+                        <!-- Item 2: President FICA -->
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
-                            <h3 class="text-xl font-bold text-accent">Presidente de la Facultad (FICA)</h3>
+                            <h3 class="text-xl font-bold text-accent">Faculty President (FICA)</h3>
                             <p class="font-semibold text-[#ccd6f6]">Universidad de las Américas <span
                                     class="text-sm text-[#8892b0] ml-2">2024 - 2025</span></p>
-                            <p class="mt-2 text-[#8892b0]">Liderazgo y representación estudiantil. Organización del
-                                "Hackathon FICA por los ODS", con más de 100 participantes y enfocado en soluciones para
-                                un futuro sostenible.</p>
+                            <p class="mt-2 text-[#8892b0]">Student leadership and representation. Organized the "FICA
+                                Hackathon for the SDGs," with over 100 participants, focused on solutions for a
+                                sustainable future.</p>
                         </div>
-                        <!-- Item 3: Educación -->
+                        <!-- Item 3: Education -->
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
-                            <h3 class="text-xl font-bold text-accent">Ingeniería en Software</h3>
+                            <h3 class="text-xl font-bold text-accent">Software Engineering</h3>
                             <p class="font-semibold text-[#ccd6f6]">Universidad de las Américas <span
-                                    class="text-sm text-[#8892b0] ml-2">Cursando 7mo Semestre</span></p>
-                            <p class="mt-2 text-[#8892b0]">Formación académica sólida con un GPA destacado (9.43/10).
-                                Enfoque en desarrollo, arquitectura de software y nuevas tecnologías.</p>
+                                    class="text-sm text-[#8892b0] ml-2">7th Semester Student</span></p>
+                            <p class="mt-2 text-[#8892b0]">Solid academic background with an outstanding GPA
+                                (9.43/10). Focused on development, software architecture, and new technologies.</p>
                         </div>
                         <!-- Item 4: Hackathon USFQ -->
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
-                            <h3 class="text-xl font-bold text-accent">1er Lugar - Hackathon "Interact2Hack"</h3>
+                            <h3 class="text-xl font-bold text-accent">1st Place - "Interact2Hack" Hackathon</h3>
                             <p class="font-semibold text-[#ccd6f6]">Universidad San Francisco de Quito <span
-                                    class="text-sm text-[#8892b0] ml-2">Marzo 2025</span></p>
-                            <p class="mt-2 text-[#8892b0]">Ganador del primer premio en la categoría universitaria por
-                                el desarrollo de un videojuego innovador en un desafío de 24 horas.</p>
+                                    class="text-sm text-[#8892b0] ml-2">March 2025</span></p>
+                            <p class="mt-2 text-[#8892b0]">Won first prize in the university category for developing an
+                                innovative video game in a 24-hour challenge.</p>
                         </div>
                         <!-- Item 5: Mentor WARMI -->
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
-                            <h3 class="text-xl font-bold text-accent">Mentor en Educatón STEMHer</h3>
+                            <h3 class="text-xl font-bold text-accent">Mentor at STEMHer Educathon</h3>
                             <p class="font-semibold text-[#ccd6f6]">WARMI & Codeis <span
                                     class="text-sm text-[#8892b0] ml-2">2025</span></p>
-                            <p class="mt-2 text-[#8892b0]">Mentoría a equipos de mujeres jóvenes en el desarrollo de
-                                soluciones tecnológicas, promoviendo la equidad y la inclusión en el campo de la
-                                ingeniería.</p>
+                            <p class="mt-2 text-[#8892b0]">Mentored teams of young women in developing technological
+                                solutions, promoting equity and inclusion in the engineering field.</p>
                         </div>
                     </div>
                     <!-- Timeline End -->
@@ -311,10 +304,10 @@
         <section id="projects" class="py-24">
             <div class="reveal">
                 <h2 class="text-3xl font-bold flex items-center mb-12"><span
-                        class="text-accent mr-3 text-2xl">03.</span>Proyectos Destacados</h2>
+                        class="text-accent mr-3 text-2xl">03.</span>Featured Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                    <!-- Proyecto 1: Cyber Grid -->
+                    <!-- Project 1: Cyber Grid -->
                     <div class="card rounded-lg p-6 flex flex-col justify-between lg:col-span-2">
                         <div>
                             <div class="flex justify-between items-center mb-4">
@@ -323,24 +316,23 @@
                                     class="text-[#8892b0] hover:text-accent transition-colors"><i
                                         data-lucide="github"></i></a>
                             </div>
-                            <h3 class="text-xl font-bold text-[#ccd6f6] mb-2">Cyber Grid: Análisis Cuantitativo de
-                                Riesgos</h3>
+                            <h3 class="text-xl font-bold text-[#ccd6f6] mb-2">Cyber Grid: Quantitative Risk Analysis
+                            </h3>
                             <p class="text-[#8892b0] mb-4">
-                                Sistema basado en microservicios y arquitectura orientada a eventos que realiza un
-                                análisis cuantitativo de riesgos de activos digitales. Utiliza una metodología propia
-                                para calcular el valor y la exposición al riesgo basándose en el dominio del usuario y
-                                su apetito al riesgo.
+                                A system based on microservices and event-driven architecture that performs a
+                                quantitative risk analysis of digital assets. It uses a proprietary methodology to
+                                calculate value and risk exposure based on the user's domain and risk appetite.
                             </p>
                         </div>
                         <div class="flex flex-wrap gap-2 text-sm text-[#8892b0] mt-4">
-                            <span class="bg-[#233554] px-2 py-1 rounded">Microservicios</span>
+                            <span class="bg-[#233554] px-2 py-1 rounded">Microservices</span>
                             <span class="bg-[#233554] px-2 py-1 rounded">Event-Driven</span>
                             <span class="bg-[#233554] px-2 py-1 rounded">Python</span>
-                            <span class="bg-[#233554] px-2 py-1 rounded">Ciberseguridad</span>
+                            <span class="bg-[#233554] px-2 py-1 rounded">Cybersecurity</span>
                         </div>
                     </div>
 
-                    <!-- Proyecto 2: Juego Hackathon -->
+                    <!-- Project 2: Hackathon Game -->
                     <div class="card rounded-lg p-6 flex flex-col justify-between">
                         <div>
                             <div class="flex justify-between items-center mb-4">
@@ -349,10 +341,10 @@
                                     class="text-[#8892b0] hover:text-accent transition-colors"><i
                                         data-lucide="github"></i></a>
                             </div>
-                            <h3 class="text-xl font-bold text-[#ccd6f6] mb-2">Videojuego Ganador de Hackathon</h3>
+                            <h3 class="text-xl font-bold text-[#ccd6f6] mb-2">Hackathon-Winning Video Game</h3>
                             <p class="text-[#8892b0] mb-4">
-                                Prototipo de videojuego desarrollado en 24 horas que nos llevó a obtener el primer lugar
-                                en el hackathon "Interact2Hack" de la USFQ.
+                                A video game prototype developed in 24 hours that led us to win first place in the
+                                "Interact2Hack" hackathon at USFQ.
                             </p>
                         </div>
                         <div class="flex flex-wrap gap-2 text-sm text-[#8892b0] mt-4">
@@ -362,7 +354,7 @@
                         </div>
                     </div>
 
-                    <!-- Proyecto 3: Gestión Pedidos -->
+                    <!-- Project 3: Order Management -->
                     <div class="card rounded-lg p-6 flex flex-col justify-between">
                         <div>
                             <div class="flex justify-between items-center mb-4">
@@ -371,20 +363,20 @@
                                     class="text-[#8892b0] hover:text-accent transition-colors"><i
                                         data-lucide="github"></i></a>
                             </div>
-                            <h3 class="text-xl font-bold text-[#ccd6f6] mb-2">Sistema de Pedidos con WhatsApp</h3>
+                            <h3 class="text-xl font-bold text-[#ccd6f6] mb-2">WhatsApp Order System</h3>
                             <p class="text-[#8892b0] mb-4">
-                                Aplicación web que integra la API de WhatsApp para gestionar pedidos de forma
-                                automatizada, desarrollada con Java.
+                                A web application that integrates the WhatsApp API to manage orders automatically,
+                                developed with Java.
                             </p>
                         </div>
                         <div class="flex flex-wrap gap-2 text-sm text-[#8892b0] mt-4">
                             <span class="bg-[#233554] px-2 py-1 rounded">Java</span>
-                            <span class="bg-[#233554] px-2 py-1 rounded">API Rest</span>
+                            <span class="bg-[#233554] px-2 py-1 rounded">REST API</span>
                             <span class="bg-[#233554] px-2 py-1 rounded">Web</span>
                         </div>
                     </div>
 
-                    <!-- Certificados -->
+                    <!-- Certifications -->
                     <div class="card rounded-lg p-6 flex flex-col justify-between lg:col-span-2">
                         <div>
                             <div class="flex justify-between items-center mb-4">
@@ -393,15 +385,15 @@
                                     target="_blank" class="text-[#8892b0] hover:text-accent transition-colors"><i
                                         data-lucide="external-link"></i></a>
                             </div>
-                            <h3 class="text-xl font-bold text-[#ccd6f6] mb-2">+25 Certificaciones Profesionales</h3>
+                            <h3 class="text-xl font-bold text-[#ccd6f6] mb-2">+25 Professional Certifications</h3>
                             <p class="text-[#8892b0] mb-4">
-                                Más de 25 cursos completados en plataformas como Udemy, Coursera y edX, cubriendo áreas
-                                de desarrollo web, ciberseguridad, inteligencia artificial, gamificación y más.
+                                Over 25 courses completed on platforms like Udemy, Coursera, and edX, covering areas
+                                such as web development, cybersecurity, artificial intelligence, gamification, and more.
                             </p>
                         </div>
                         <div class="flex flex-wrap gap-2 text-sm text-[#8892b0] mt-4">
-                            <span class="bg-[#233554] px-2 py-1 rounded">Aprendizaje Continuo</span>
-                            <span class="bg-[#233554] px-2 py-1 rounded">Multi-disciplinario</span>
+                            <span class="bg-[#233554] px-2 py-1 rounded">Continuous Learning</span>
+                            <span class="bg-[#233554] px-2 py-1 rounded">Multi-disciplinary</span>
                         </div>
                     </div>
 
@@ -413,14 +405,14 @@
         <section id="skills" class="py-24">
             <div class="reveal">
                 <h2 class="text-3xl font-bold flex items-center mb-12"><span
-                        class="text-accent mr-3 text-2xl">04.</span>Habilidades y Estadísticas</h2>
+                        class="text-accent mr-3 text-2xl">04.</span>Skills & Statistics</h2>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <!-- Lenguajes y Tecnologías -->
+                    <!-- Languages & Technologies -->
                     <div>
-                        <h3 class="text-2xl font-bold text-[#ccd6f6] mb-6">Lenguajes y Tecnologías</h3>
+                        <h3 class="text-2xl font-bold text-[#ccd6f6] mb-6">Languages & Technologies</h3>
                         <div class="space-y-4">
                             <div>
-                                <h4 class="text-lg font-semibold text-accent mb-2">Dominantes</h4>
+                                <h4 class="text-lg font-semibold text-accent mb-2">Proficient</h4>
                                 <div class="flex flex-wrap gap-4">
                                     <div class="flex items-center space-x-2 text-lg"><i data-lucide="code"
                                             class="text-accent"></i><span>Python</span></div>
@@ -435,7 +427,7 @@
                                 </div>
                             </div>
                             <div>
-                                <h4 class="text-lg font-semibold text-accent mb-2">Aprendiendo y Explorando</h4>
+                                <h4 class="text-lg font-semibold text-accent mb-2">Learning & Exploring</h4>
                                 <div class="flex flex-wrap gap-4">
                                     <div class="flex items-center space-x-2 text-lg"><i data-lucide="code"
                                             class="text-accent"></i><span>Go</span></div>
@@ -447,9 +439,9 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Gráficos -->
+                    <!-- Graph -->
                     <div class="card p-6 rounded-lg">
-                        <h3 class="text-xl font-bold text-center text-[#ccd6f6] mb-4">Estadísticas de GitHub (Simulado)
+                        <h3 class="text-xl font-bold text-center text-[#ccd6f6] mb-4">GitHub Statistics (Simulated)
                         </h3>
                         <canvas id="languageChart"></canvas>
                     </div>
@@ -461,15 +453,15 @@
         <section id="contact" class="py-24 text-center">
             <div class="reveal">
                 <h2 class="text-3xl font-bold flex items-center justify-center mb-4"><span
-                        class="text-accent mr-3 text-2xl">05.</span>¿Qué sigue?</h2>
-                <h3 class="text-4xl md:text-5xl font-black text-[#ccd6f6] mb-4">Ponte en Contacto</h3>
+                        class="text-accent mr-3 text-2xl">05.</span>What's Next?</h2>
+                <h3 class="text-4xl md:text-5xl font-black text-[#ccd6f6] mb-4">Get In Touch</h3>
                 <p class="max-w-xl mx-auto text-lg text-[#8892b0] mb-8">
-                    Siempre estoy abierto a nuevas oportunidades, colaboraciones y desafíos. Si tienes un proyecto en
-                    mente o simplemente quieres conversar sobre tecnología, ¡no dudes en escribirme!
+                    I'm always open to new opportunities, collaborations, and challenges. If you have a project in
+                    mind or just want to talk about technology, feel free to reach out!
                 </p>
                 <a href="mailto:gabriel1302cm@gmail.com"
                     class="inline-block px-8 py-4 border-2 border-accent text-accent text-lg rounded-md hover:bg-accent hover:text-[#0a192f] transition-colors">
-                    ¡Hablemos!
+                    Let's Talk!
                 </a>
             </div>
         </section>
@@ -488,24 +480,24 @@
             <a href="mailto:gabriel1302cm@gmail.com" class="text-[#8892b0] hover:text-accent transition-colors"><i
                     data-lucide="mail" class="w-6 h-6"></i></a>
         </div>
-        <p class="text-center text-sm text-[#8892b0]">Diseñado y construido por Gabriel Calderón</p>
+        <p class="text-center text-sm text-[#8892b0]">Designed & Built by Gabriel Calderón</p>
     </footer>
 
 
     <script>
-        // Se ejecuta cuando el DOM está completamente cargado
+        // Executes when the DOM is fully loaded
         document.addEventListener('DOMContentLoaded', () => {
-            // Inicialización de Lucide Icons
+            // Initialize Lucide Icons
             lucide.createIcons();
 
-            // Menú móvil
+            // Mobile menu
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             mobileMenuButton.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
             });
 
-            // Ocultar header al hacer scroll hacia abajo, mostrar al subir
+            // Hide header on scroll down, show on scroll up
             let lastScrollTop = 0;
             const header = document.getElementById('header');
             window.addEventListener('scroll', function () {
@@ -520,7 +512,7 @@
                 lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
             });
 
-            // Configuración de ScrollReveal
+            // ScrollReveal configuration
             ScrollReveal().reveal('.reveal', {
                 delay: 200,
                 distance: '50px',
@@ -530,15 +522,15 @@
                 reset: false
             });
 
-            // Configuración de Chart.js
+            // Chart.js configuration
             const ctx = document.getElementById('languageChart').getContext('2d');
             const languageChart = new Chart(ctx, {
                 type: 'doughnut',
                 data: {
                     labels: ['Python', 'Java', 'JavaScript', 'C#', 'C/C++'],
                     datasets: [{
-                        label: 'Distribución de Lenguajes',
-                        // Datos simulados basados en tus proyectos. ¡Puedes ajustarlos!
+                        label: 'Language Distribution',
+                        // Simulated data based on your projects. You can adjust these!
                         data: [35, 30, 20, 10, 5],
                         backgroundColor: [
                             'rgba(100, 255, 218, 0.8)', // accent
@@ -559,7 +551,7 @@
                         legend: {
                             position: 'top',
                             labels: {
-                                color: '#ccd6f6' // Color del texto de la leyenda
+                                color: '#ccd6f6' // Legend text color
                             }
                         },
                         title: {
